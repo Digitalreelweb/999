@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: 'Akira Expanded';
+            src: url('Akira Expanded Demo.woff2') format('woff2'),
+                 url('Akira Expanded Demo.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Bebas Neue';
+            src: url('BebasNeue-Regular.woff2') format('woff2'),
+                 url('BebasNeue-Regular.woff') format('woff');
+        }
+
+        body {
+            font-family: 'Akira Expanded', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+        header {
+            padding: 1rem 0;
+            background-color: #000;
+            text-align: center;
+        }
+        header img {
+            max-width: 600px;
+            height: auto;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .buttons button {
+            background: #444;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .buttons button .akira-title {
+            font-family: 'Akira Expanded', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .buttons button .bebas-details {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .buttons button:hover {
+            background: #666;
+        }
+        .video-container {
+            text-align: center;
+            margin: 2rem auto;
+            width: 100%;
+            max-width: 800px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        .catalogue-button {
+            display: inline-block;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+        }
+        .catalogue-button:hover {
+            background: #666;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image0.png" alt="Digital Reel Logo">
+    </header>
+    <div class="buttons">
+        <button onclick="window.location.href='treatments.html'">
+            <span class="akira-title">a package</span>
+            <span class="bebas-details">Treatments</span>
+        </button>
+        <button onclick="window.location.href='run_and_gun.html'">
+            <span class="akira-title">B Package</span>
+            <span class="bebas-details">Run & Gun</span>
+        </button>
+        <button onclick="window.location.href='perfect_aim.html'">
+            <span class="akira-title">Perfect Aim</span>
+            <span class="bebas-details">MIC PERFORMANCE & INTERVIEW</span>
+        </button>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/BqWwKYA1pVw?autoplay=1&mute=1&loop=1&playlist=BqWwKYA1pVw" allow="autoplay; encrypted-media"></iframe>
+        <a href="https://www.youtube.com/watch?v=MSj8w57QBxM&list=PLH-GFYPfodLmquqnCD87PnZc7oe3KWPWF" target="_blank" class="catalogue-button">View Our Full Catalogue</a>
+    </div>
+</body>
+</html>
